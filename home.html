@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoStorm</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: opacity 0.3s ease-in-out;
+            text-decoration: none;
+            outline: none;
+            background-color: red;
+            color: white;
+        }
+
+            .button.discord {
+                background-color: gray;
+            }
+
+            .button:hover {
+                opacity: 0.5;
+            }
+
+        .faq-link {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.75);
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function () {
+            document.body.style.opacity = "1";
+        });
+
+        function openInNewTab(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</head>
+<body>
+    <a href="#" class="faq-link">FAQ</a>
+    <div class="container">
+        <h1><img class="logo" src="https://cdn.discordapp.com/attachments/1111039700648611933/1141410841300848750/RoStorm_Icon_1.png" alt="RoStorm Logo"></h1>
+        <p>RoStorm is an executor, the safest and fastest executor.</p>
+        <p>THIS IS AN OFFICIAL WEBSITE. ANY OTHER WEBSITES ARE FAKE. DON'T TRUST THEM. THE REAL ONE IS https://rostorm.xyz</p>
+        <button class="button" onclick="openInNewTab('https://cdn.discordapp.com/attachments/1141396293361602630/1141453084032258108/RoStorm.xyz.zip')">Download</button>
+        <button class="button discord" onclick="openInNewTab('https://discord.gg/Mt5aGnsSv2')">Discord</button>
+    </div>
+</body>
+</html>
